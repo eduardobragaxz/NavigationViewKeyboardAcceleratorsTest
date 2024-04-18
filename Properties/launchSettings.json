@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NavigationViewKeyboardAcceleratorsTest (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NavigationViewKeyboardAcceleratorsTest (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

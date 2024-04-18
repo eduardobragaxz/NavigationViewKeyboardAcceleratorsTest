@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="NavigationViewKeyboardAcceleratorsTest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NavigationViewKeyboardAcceleratorsTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <NavigationView ItemInvoked="NavigationView_ItemInvoked">
+
+        <NavigationView.MenuItems>
+
+            <NavigationViewItem Content="Item 1"
+                                x:Name="Item1"/>
+
+            <NavigationViewItem Content="Item 2"
+                                x:Name="Item2"/>
+
+            <NavigationViewItem SelectsOnInvoked="False" Content="Keyboard accelarator button">
+
+                <NavigationViewItem.KeyboardAccelerators>
+
+                    <KeyboardAccelerator Key="N"
+                                         Modifiers="Control"/>
+
+                </NavigationViewItem.KeyboardAccelerators>
+
+            </NavigationViewItem>
+
+        </NavigationView.MenuItems>
+
+        <StackPanel>
+
+            <TextBlock Text="How many times have ItemInvoked been called"/>
+
+            <TextBlock x:Name="ItemInvokedCount"/>
+            
+        </StackPanel>
+        
+    </NavigationView>
+    
+</Window>
